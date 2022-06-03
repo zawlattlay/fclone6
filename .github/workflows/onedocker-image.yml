@@ -1,0 +1,47 @@
+name: Telegram Bot Set Up
+
+on: workflow_dispatch
+
+jobs: 
+  build:
+    name: Setting up Bot Environment
+    runs-on: ubuntu-latest
+    steps:
+      - name: Installing Required Environment
+        uses: actions/setup-python@v2
+        with:
+          python-version: 3.9
+      - name: Preparing Source Code
+        uses: actions/checkout@v2
+      - name: Coding now! Please wait
+        run: |
+          unzip code.zip
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+      - name: Getting Credentials 
+        run: |
+          pip install google-api-python-client google-auth-httplib2 google-auth-oauthlib 
+          FROM ubuntu:18.04
+          WORKDIR /usr/src/app
+          chmod 777 /usr/src/app
+          apt-get -qq update
+         apt-get -qq install -y git python3 python3-pip \
+         locales python3-lxml aria2 \
+          curl pv jq nginx npm
+          COPY requirements.txt .
+           pip3 install --no-cache-dir -r requirements.txt && \
+            apt-get -qq purge git
+          locale-gen en_US.UTF-8
+         LANG en_US.UTF-8
+           LANGUAGE en_US:en
+            LC_ALL en_US.UTF-8
+                COPY . .
+                chmod +x start.sh
+              RUN chmod +x fclone
+          CMD ["bash","start.sh"]
+      - name: Building Bot
+        run: docker build . -t start.sh
+      - name: Running the bot, after a while it will be available for 6 hours. Join t.me/drivetalk for any question
+        run: docker run start.sh
