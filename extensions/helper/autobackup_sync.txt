@@ -1,0 +1,22 @@
+#!/bin/bash
+
+python3 sync.py -s 0AITr9RyGZrwoUk9PVA -d 0AOah3aeL1BhwUk9PVA -sp / -dp / -b 1 -e 600   oth-  oth 1
+python3 sync.py -s 0AOah3aeL1BhwUk9PVA -d 0ABHvEzrueY6qUk9PVA -sp / -dp / -b 1 -e 600   oth1- oth2
+python3 sync.py -s 0ACUOpOTBySQNUk9PVA -d 0AK5F5rndG8SNUk9PVA -sp / -dp / -b 1 -e 600  mv1  -1.1
+python3 sync.py -s 0AK5F5rndG8SNUk9PVA -d 0AMhAfgIb4aAcUk9PVA -sp / -dp / -b 1 -e 600   mv1.1-1.2
+python3 sync.py -s 0AAydHwnzBXTOUk9PVA -d 0ABWIKrFXsRBbUk9PVA -sp / -dp / -b 1 -e 600  mv2  -2.1
+python3 sync.py -s 0ABWIKrFXsRBbUk9PVA -d 0APwBgG4IRBMEUk9PVA -sp / -dp / -b 1 -e 600  mv2.1-2.2  ဒါ run ထားတယ်
+python3 sync.py -s 0ACB91CdZLqE0Uk9PVA -d 0APSA3DSnrRf-Uk9PVA -sp / -dp / -b 1 -e 600  mv3  -3.1
+python3 sync.py -s 0APSA3DSnrRf-Uk9PVA -d 0AGB-4ONsk4GrUk9PVA -sp / -dp / -b 1 -e 600  mv3.1-3.2
+python3 sync.py -s 0AOhJmDjojyAgUk9PVA -d 0AEkoLyagqae5Uk9PVA -sp / -dp / -b 1 -e 600   mv4  -4.1
+python3 sync.py -s 0AEkoLyagqae5Uk9PVA -d 0AHY-E0O2ViMFUk9PVA -sp / -dp / -b 1 -e 600   mv4.1-4.2
+python3 sync.py -s 0ACG_us8Y67KXUk9PVA -d 0ANVtu2Zn9liaUk9PVA -sp / -dp / -b 1 -e 600   X1  -1.1
+python3 sync.py -s 0ANVtu2Zn9liaUk9PVA -d 0ADmcQ-AWhcF_Uk9PVA -sp / -dp / -b 1 -e 600  X1.1- 1.2
+python3 sync.py -s 0AIU4c2frBFkHUk9PVA -d 0AMAisOn4ceBWUk9PVA -sp / -dp / -b 1 -e 600   X2  -2.1
+python3 sync.py -s 0AMAisOn4ceBWUk9PVA -d 0AJ97CWc-QMK2Uk9PVA -sp / -dp / -b 1 -e 600 X2.1-2.2
+
+
+ပြင်ပြီးရင်
+git add .
+git commit -m update sync.sh   (copy.py က code ကို  syn.py ထဲ ကူးပြီးသားမို့  sync.sh run ရုံပါပဲ copy လုပ်ပါလိမ့်မယ်)
+git push heroku main
