@@ -26,9 +26,9 @@ jobs:
       - name: Installing filesV3
         run: |
           bash docker.sh
-      - name: Installing filesV4
-        run: |
-          unzip docker.zip
+      ##- name: Installing filesV4
+        ##run: |
+          ##unzip docker.zip
       - name: Preparing Bot Token
         run: echo telegram_token = ${{ github.event.inputs.Bot_id }} >> telegram_gcloner/config.ini
       - name: Preparing User ID
