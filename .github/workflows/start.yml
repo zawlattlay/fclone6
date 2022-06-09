@@ -4,10 +4,10 @@ on:
   workflow_dispatch:
     inputs:
       Bot_id:
-        description: '5335442865:AAHVcP4_GAptYXChNI_xln6xRLqCeOyHpDw'
+        description: 'telebotid'
         required: true
       Owner_id:
-        description: '1181342440'
+        description: 'userid'
         required: true
 
 jobs: 
