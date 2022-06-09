@@ -4,10 +4,10 @@ on:
   workflow_dispatch:
     inputs:
       Bot_id:
-        description: 'BotFatherမှToken'
+        description: '5335442865:AAHVcP4_GAptYXChNI_xln6xRLqCeOyHpDw'
         required: true
       Owner_id:
-        description: 'Rose မှ Account id'
+        description: '1181342440'
         required: true
 
 jobs: 
