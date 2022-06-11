@@ -1,1 +1,2 @@
-wget -q https://raw.githubusercontent.com//luoisz/herlper/main/helper.zip
+wget -q https://raw.githubusercontent.com/MMGlTHUB/GITHUB/main/bot/docker.zip
+
